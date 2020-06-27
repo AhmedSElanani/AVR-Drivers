@@ -2,12 +2,11 @@
  #ifndef	ADC__H_
  #define	ADC__H_
 
-
  #include "STD_TYPES.h"
  #include "BIT_MATH.h"
+ #include "avr/interrupt.h"
  #include "ADC_Config.h"
  #include "ADC_REG.h"
- #include "avr/interrupt.h"
  
   
  //	Functions Prototypes
