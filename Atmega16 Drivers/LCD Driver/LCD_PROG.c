@@ -15,6 +15,7 @@
 	LCD_Vid_4BitSendCommand(DISPLAY_CONTROL);
 	LCD_VidClrLCD();
 	LCD_Vid_4BitSendCommand(ENTRY_MODE);
+	LCD_VidDelay_uS(200); 
 }
 
 
@@ -147,8 +148,12 @@ void LCD_VidClrLCD(void)
 {
 	#if (MODE == 4)
 	LCD_Vid_4BitSendCommand(CLEAR_DISPLAY);
+					LCD_VidDelay_mS(5);
+
 	#elif (MODE == 8)
-	LCD_Vid_8BitSendCommand(CLEAR_DISPLAY);					
+	LCD_Vid_8BitSendCommand(CLEAR_DISPLAY);	
+	LCD_VidDelay_uS(200); 
+				
 	#endif	
 }
 
