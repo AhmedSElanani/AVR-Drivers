@@ -5,14 +5,29 @@
  
  
 //	ADC Registers
+#ifndef	ADCL
 #define ADCL						(*((volatile u8*)(0x24)))
+#endif
+
+#ifndef	ADCH
 #define ADCH						(*((volatile u8*)(0x25)))
+#endif
+
+#ifndef	ADCSRA
 #define ADCSRA						(*((volatile u8*)(0x26)))
+#endif
+
+#ifndef	ADCSRA
+#define ADCSRA						(*((volatile u8*)(0x26)))
+#endif
+
+#ifndef	ADMUX
 #define ADMUX						(*((volatile u8*)(0x27)))
+#endif
+
+#ifndef	SFIOR
 #define SFIOR						(*((volatile u8*)(0x50)))
-
-
-
+#endif
 
 
 
